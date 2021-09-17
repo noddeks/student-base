@@ -1,0 +1,11 @@
+label {
+  margin-bottom: 10px;
+}
+
+.mb-6 {
+  margin-bottom: 60px;
+}
+
+.sort-by-name, .sort-by-faculty, .sort-by-age, .sort-by-study-years {
+  cursor: pointer;
+}

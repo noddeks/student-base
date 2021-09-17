@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="container-xl">
+    <h2 class="mb-4">Форма добавления нового студента</h2>
+    <form class="form mb-6">
+      <input class="name row col-5 mb-2" type="text" placeholder="Имя">
+      <input class="surname row col-5 mb-2" type="text" placeholder="Фамилия">
+      <input class="middlename row col-5 mb-2" type="text" placeholder="Отчество">
+      <label for="birth">Введите дату рождения</label>
+      <input id="birth" class="birthday row col-5 mb-2" type="date" min="1900-01-01">
+      <input class="study-year row col-5 mb-2" type="number" placeholder="Год начала обучения" min="2000">
+      <input class="faculty row col-5 mb-2" type="text" placeholder="Факультет">
+      <button class="form-button button-primary p-2 rounded-pill">Добавить студента</button>
+    </form>
+    <div class="filters align-items-baseline justify-content-center d-flex mb-6">
+      <div class="col-3">
+        <label for="filter-name">Фильтровать студентов по ФИО</label>
+        <input id="filter-name"  type="text">
+      </div>
+      <div class="col-3">
+        <label for="filter-faculty">Фильтровать студентов по факультету</label>
+        <input id="filter-faculty"  type="text">
+      </div>
+      <div class="col-3">
+        <label for="start-year">Фильтровать студентов по году начала обучения</label>
+        <input id="start-year" type="text">
+      </div>
+      <div class="col-3">
+        <label for="graduate-year">Фильтровать студентов по году окончания обучения</label>
+        <input id="graduate-year" type="text">
+      </div>
+    </div>
+    <table class="table table-success table-striped table-bordered align-middle col-10">
+      <thead>
+        <tr>
+          <th class="sort-by-name" scope="col">ФИО студента</th>
+          <th class="sort-by-faculty" scope="col">Факультет</th>
+          <th class="sort-by-age" scope="col">Дата рождения и возраст</th>
+          <th class="sort-by-study-years" scope="col">Годы обучения</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</body>
+</html>
